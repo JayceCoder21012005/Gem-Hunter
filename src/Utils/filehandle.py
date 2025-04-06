@@ -23,7 +23,7 @@ def inputMatrix(filename = "./testcases/input.txt"):
                     row.append("G")
                 elif cell.isnumeric():
                     cell = int(cell)
-                    if cell < 1 or cell > 9: raise ValueError("Out of range(1-9)!.")
+                    if cell < 1 or cell > 8: raise ValueError("Out of range(1-8)!.")
                     row.append(int(cell))
                 else:
                     raise ValueError("Invalid input")
