@@ -34,7 +34,6 @@ def getCNFClause(matrix):
 
     for i in range(1, n_rows - 1):
         for j in range(1, n_cols - 1):
-            print(padded_matrix[i][j])
             cell_value = padded_matrix[i][j]
 
             if isinstance(cell_value, int):
