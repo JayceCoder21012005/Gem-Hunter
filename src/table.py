@@ -35,7 +35,7 @@ if __name__ == "__main__":
                 result += [[test_case, logging_info['CNFs'], logging_info['empties'], len([x for x in model if x > 0]), algorithm, f"{elapsed_time:.4f} ms", hashModel(model)]]
             
             table = tabulate(result, headers=['Test case', 'CNFs', 'Empty cells', 'Traps', 'Algorithm', 'Time', 'Model hash (binary)'], tablefmt='orgtbl')
-            writeResult(table, "statistic.txt")
+            writeResult(table, "./src/statistic.txt")
 
         result += [["-" for _ in range(7)]]
 
